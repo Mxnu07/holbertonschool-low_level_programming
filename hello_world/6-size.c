@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* 
+/**
  * main - print size of with command size
  * Return: 0 (Success)
  */
