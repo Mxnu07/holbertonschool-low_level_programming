@@ -5,7 +5,6 @@
  * main - C program to assign random number to variable
  * Return: 0 (Success)
  */
-
 int main(void)
 {
 int n;
