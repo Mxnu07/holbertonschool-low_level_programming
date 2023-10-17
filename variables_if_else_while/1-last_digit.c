@@ -14,12 +14,12 @@ int main(void)
 	y = n % 10;
 		printf("Last digit of %d is %d", n,y);
 	{
-	if (n > 5)
-	printf("%d is greater than 5\n", n);
+	if (y > 5)
+	printf(" and is greater than 5\n");
 
-else if (n < 6)
+else if (y < 6)
 
-	printf("%d is less than 6 and not 0\n", n);
+	printf(" and is less than 6 and not 0\n");
 
 		else if (n == 0)
 			printf("and is 0\n");
