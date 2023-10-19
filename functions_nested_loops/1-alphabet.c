@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_alphabet - This function prints the alphabet from 'a' to 'z' on the console
+ * print_alphabet - This function prints the alphabet from 'a' to 'z'
  * Return: void (Success)
  */
 void print_alphabet(void)
