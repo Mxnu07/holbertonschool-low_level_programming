@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - This function prints the alphabet from 'a' to 'z' on the console
- *Return: void (Success)
+ * print_alphabet - This function prints the alphabet from 'a' to 'z' on the console
+ * Return: void (Success)
  */
 void print_alphabet(void)
 {
