@@ -2,16 +2,15 @@
 #include "main.h"
 /**
  * main - program that prints alphabet
- * Return: 0 (Success)
+ * Return: void
  */
 int main(void)
 {
-	int a;
+	char m;
 	
-	for(a = 'a'; a <= 'z'; a++)
+	for (m = 'a'; m <= 'z'; m++)
 {
-	putchar(a);
+	putchar(m);
 }
-putchar('\n');
-return (0);
+	putchar('\n');
 }
