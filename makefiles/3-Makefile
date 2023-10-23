@@ -1,0 +1,26 @@
+CC = gcc
+SRC = main.c file1.c file2.c  # List all your .c source files here
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+    $(CC) -o $@ $(OBJ)
+
+%.o: %.c
+    $(CC) -c $< -o $@
+
+clean:
+    $(RM) *~ $(OBJ)
+
+oclean:
+    $(RM) $(OBJ)
+
+fclean: clean
+    $(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean oclean fclean re
