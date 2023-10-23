@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _isupper - check for uppercase character
- * 
+ * @c: character valued
  * Return: 1 if is uppercase, zero otherwise
  */
 
