@@ -1,26 +1,41 @@
 CC = gcc
-SRC = main.c file1.c file2.c  # List all your .c source files here
-OBJ = $(SRC:.c=.o)
-NAME = school
-RM = rm -f
+SRC = main.c holberton.c
+OBJ = ${SRC:.c=.o}
+NAME = holberton
+RM = rm
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-    $(CC) -o $@ $(OBJ)
-
-%.o: %.c
-    $(CC) -c $< -o $@
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 
 clean:
-    $(RM) *~ $(OBJ)
+	${RM} -f *~ ${NAME}
 
 oclean:
-    $(RM) $(OBJ)
+	${RM} -f ${OBJ}
 
-fclean: clean
-    $(RM) $(NAME)
+fclean: clean oclean
 
-re: fclean all
+re: oclean all
 
-.PHONY: all clean oclean fclean re
+.PHONY: clean oclean fclean re
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
