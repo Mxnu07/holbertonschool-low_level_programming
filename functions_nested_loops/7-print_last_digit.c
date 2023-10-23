@@ -4,7 +4,6 @@
  * print_last_digit - print the last digit of a num
  * Return: last digit of value
  * @a: number to valued
- * @b: last digit of a
  */
 int print_last_digit(int a)
 {
