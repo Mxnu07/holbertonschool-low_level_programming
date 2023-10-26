@@ -3,12 +3,11 @@
 /**
  * print_array - function to print elements of array
  * @a: array to print
- *
+ * @n: elements to print
  */
 void print_array(int *a, int n)
 {
 	int i;
-	int n;
 
 	for (i = 0; i < n; i++)
 	{
