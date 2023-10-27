@@ -5,7 +5,7 @@
  *
  * Return: destination
  */
-char *_strcat(char *dest, cahr *src)
+char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
