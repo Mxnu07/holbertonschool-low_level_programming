@@ -2,7 +2,8 @@
 #include "main.h"
 /**
  * *_strcat - functin that concatenates two strings
- *
+ * @dest: destination of pointer
+ * @src: pointer to add
  * Return: destination
  */
 char *_strcat(char *dest, char *src)
