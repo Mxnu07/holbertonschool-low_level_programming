@@ -2,9 +2,9 @@
 #include "main.h"
 /**
  * *_strncat - function that concatenates 2 string
- * src: string to concated
- * dest: destination f string
- *
+ * @src: string to concated
+ * @dest: destination f string
+ * @n: bytes from src
  * Return: result of dest
  */
 char *_strncat(char *dest, char *src, int n)
