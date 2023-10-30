@@ -3,17 +3,19 @@
 /**
  * _memset - fills n bytes of memory pointed to by @s with constant byte @c
  * @s: Pointer
- * @c: character to fill
+ * @b: character to fill
  * @n: number of byte
  * return: pointer filled @s
  */
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
+	unsigned int i = 0;
+	char *start = s;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-
-	return (memory);
+	while (i < n)
+	{
+		*s++ = b;
+		i++;
+	}
+	return (start);
 }
