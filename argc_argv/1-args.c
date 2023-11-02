@@ -5,7 +5,7 @@
  * @argv: an array of size argc
  * Return: 0
  */
-int main (int atgc, char *argv[])
+int main(int argc, char **argv __attribute__((unused)))
 
 {
 	printf("%d\n", argc - 1);
