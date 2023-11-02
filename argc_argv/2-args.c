@@ -5,7 +5,7 @@
  * @argv: array of the size argc
  * Return: 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int c;
 
