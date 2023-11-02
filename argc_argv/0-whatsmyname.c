@@ -3,7 +3,7 @@
  * main - print name of program
  * @argc: size of array in argv
  * @argv: array size of argc
- * Return: 0 
+ * Return: 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
