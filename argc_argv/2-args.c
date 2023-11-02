@@ -1,20 +1,17 @@
 #include <stdio.h>
 /**
  * main - prints all arguments its receives
- * @argc:
- * @argv:
+ * @argc: size of argv array
+ * @argv: array of the size argc
  * Return: 0
  */
 int main (int argc, char *argv[])
 {
-	int count;
+	int c;
 
-	if (argc > 1)
-	{
-		for (count =1; count < argc; count++)
+	for (c = 0; c < argc; c++)
 		{
-			printf("%s\n", argv[count]);
+			printf("%s\n", argv[c]);
 		}
-	}
 	return (0);
 }
