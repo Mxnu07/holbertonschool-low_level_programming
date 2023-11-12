@@ -3,7 +3,6 @@
 #include "main.h"
 /**
  * *malloc_checked - allocates memory using malloc
- * @m: pointer
  * @b: unisigned int
  * Return: pointer to allocated memory, if fails return 98
  */
