@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <stdio.h>
 /**
  * init_dog - initialize function for struct dog
  * @d: pointer to dog struct
