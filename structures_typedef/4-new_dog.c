@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  *
  */
@@ -7,42 +9,41 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 {
 	dog_t *newdog;
-	int lenght1, lenght2, i, j;
+	int length1, length2, i, j;
 
-	lenght1 = 0, lenght2 = 0;
+	length1 = 0, length2 = 0;
 	newdog = malloc(sizeof(struct dog));
 
 	if (newdog == NULL)
 		return (NULL);
-	while (name[lenght1++]
+	while (name[length1++])
 		;
-	while (owner[lenght2++]
+	while (owner[length2++])
 		;
-		newDog->name = malloc(sizeof(newDog->name) * length1);
+		newdog->name = malloc(sizeof(newdog->name) * length1);
 
-	if (newDog->name == NULL)
+	if (newdog->name == NULL)
 	{
-		free(newDog);
+		free(newdog);
 		return (NULL);
 	}
 
 	for (i = 0; i < length1; i++)
-		newDog->name[i] = name[i];
+		newdog->name[i] = name[i];
 
-	newDog->age = age;
+	newdog->age = age;
 
 
-	newDog->owner = malloc(sizeof(newDog->owner) * length2);
+	newdog->owner = malloc(sizeof(newdog->owner) * length2);
 
-	if (newDog->owner == NULL)
+	if (newdog->owner == NULL)
 	{
-		free(newDog->name);
-		free(newDog);
+		free(newdog->name);
+		free(newdog);
 		return (NULL);
 	}
 	for (j = 0; j < length2; j++)
-		newDog->owner[j] = owner[j];
+		newdog->owner[j] = owner[j];
 
-	return (newDog);
+	return (newdog);
 }
-
