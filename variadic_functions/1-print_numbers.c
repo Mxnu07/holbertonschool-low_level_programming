@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  *  print_numbers -  prints numbers sepereated by seperator
- *
  *  @seperator: String beetween numbers
- *
  *  @n: Number of args
- *
  *  Return void
  */
 
